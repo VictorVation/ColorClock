@@ -10,7 +10,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('zip', ['clean'], function () {
-    return gulp.src('ext/*')
+    return gulp.src('ext/**/*')
         .pipe(zip('ColorClock.zip'))
         .pipe(gulp.dest('dist'));
 });
