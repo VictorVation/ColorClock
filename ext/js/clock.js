@@ -1,10 +1,10 @@
 (function () {
-  var $   = document.querySelector.bind(document),
-    $time = $('[role=time]'),
-    $hex  = $('[role=hex]'),
-    $body = $('body'),
+  var $     = document.querySelector.bind(document),
+    $time   = $('[role=time]'),
+    $hex    = $('[role=hex]'),
+    $body   = $('body'),
     $canvas = $('canvas')
-    $favicon = $('link[rel="shortcut icon"]');
+    $favicon= $('link[rel="shortcut icon"]');
 
   var formatTime = function(date) {
     return [date.getHours(), date.getMinutes(), date.getSeconds()]
