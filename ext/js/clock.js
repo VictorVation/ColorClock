@@ -3,7 +3,7 @@
     $time   = $('[role=time]'),
     $hex    = $('[role=hex]'),
     $body   = $('body'),
-    $canvas = $('canvas')
+    $canvas = $('canvas'),
     $favicon= $('link[rel="shortcut icon"]');
 
   var formatTime = function(date) {
@@ -30,7 +30,7 @@
     $hex.innerHTML = colourNow;
     $body.style.background = colourNow;
     document.title = 'New Tab - ' + timeNow;
-    // swapFavicon(nowColour);
+    swapFavicon(colourNow);
 
     setTimeout(tick, 1000);
   };
