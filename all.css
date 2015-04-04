@@ -23,7 +23,8 @@ a { color: #ddd; }
    top: 35%;
    margin-left: -300px;
    margin-top: -300px;
-   text-align: center
+   text-align: center;
+   z-index: 1;
 }
 
 #notice {
@@ -35,12 +36,16 @@ a { color: #ddd; }
   border-radius: 5px;
   opacity: 0;
   transition: opacity 800ms ease-in-out;
+  position: relative;
+  z-index: 2;
 }
 
 .dismiss {
   color: #999;
-  float: right;
   cursor: pointer;
+  position: absolute;
+  top: 2.22rem;
+  right: 10px;
 }
 
 ::selection {
